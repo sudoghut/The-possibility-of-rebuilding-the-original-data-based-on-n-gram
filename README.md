@@ -36,8 +36,8 @@ The article aims to develop a model that calculates the probabilities of reconst
    
 	The possibilities of the first and last sequence are quite similar, therefore we can reach this conclusion:
 
-   $$Pr(s_1, s_2, ..., s_{k-n+1}) = 2 \cdot Pr(s_1) \cdot exp(s_{n-1})^{(k-n)}$$
+   $$Pr(s_1, s_2, ..., s_{k-n+1}) = Pr(s_1)^2 \cdot exp(s_{n-1})^{(k-n)}$$
 
 10. Sometimes, we assume that if $x\\%$ of the data was rebuilt, information is leaked. Thus, we can modify our model as follows:
     
-    $$Pr(s_1, s_2, ..., s_{k \cdot x\\% - n + 1}) = 2 \cdot Pr(s_1) \cdot exp(s_{n-1})^{(k \cdot x\\% - n)}$$
+    $$Pr(s_1, s_2, ..., s_{k \cdot x\\% - n + 1}) = Pr(s_1)^2 \cdot exp(s_{n-1})^{(k \cdot x\\% - n)}$$
