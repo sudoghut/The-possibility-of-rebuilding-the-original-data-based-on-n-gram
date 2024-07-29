@@ -32,8 +32,8 @@ The article aims to develop a model that calculates the probabilities of reconst
 
 7. From (4) and (6), we conclude:
 
-   $$Pr(s_1, s_2, ..., s_{k-n+1}) = Pr(s_1) \cdot exp(s_{n-1}) \cdot (k-n) \cdot Pr(s_{k-n+1})$$
+   $$Pr(s_1, s_2, ..., s_{k-n+1}) = Pr(s_1) \cdot exp(s_{n-1})^{(k-n)} \cdot Pr(s_{k-n+1})$$
 
 8. Sometimes, we assume that if $x\\%$ of the data was rebuilt, information is leaked. Thus, we can modify our model as follows:
 
-   $$Pr(s_1, s_2, ..., s_{k \cdot x\\% - n + 1}) = Pr(s_1) \cdot exp(s_{n-1}) \cdot (k \cdot x\\% - n) \cdot Pr(s_{k\cdot x\\%-n+1})$$
+   $$Pr(s_1, s_2, ..., s_{k \cdot x\\% - n + 1}) = Pr(s_1) \cdot exp(s_{n-1})^{(k \cdot x\\% - n)} \cdot Pr(s_{k\cdot x\\%-n+1})$$
