@@ -1,3 +1,7 @@
+# The possibility of rebuilding the original data based on n-gram
+
+(still working)
+
 The article aims to develop a model that calculates the probabilities of reconstructing the original data when using an n-gram to generate a vocabulary from a text repository, which cannot be published publicly due to copyright or privacy concerns.
 
 These are the given variables:
