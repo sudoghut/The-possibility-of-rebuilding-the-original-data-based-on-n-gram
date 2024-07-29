@@ -8,17 +8,17 @@ The article aims to develop a model that calculates the probabilities of reconst
 
 1. We have a text, T.
 
-2. Text T contains a word sequence: $\{w_1, w_2, w_3, w_4, ..., w_k\}$, where *k* is the total number of words in the sequence.
+2. Text T contains a word sequence: $\\{w_1, w_2, w_3, w_4, ..., w_k\\}$, where *k* is the total number of words in the sequence.
 
 3. An n-gram creates a subset of text T:
 
-   $$\{s_1, s_2,...,s_{k-n+1}\} = \{\{w_1,..., w_n\}, \{w_2,..., w_{1+n}\}, ..., \{w_{k-n+1}, ..., w_k\}\}$$
+   $$\\{s_1, s_2,...,s_{k-n+1}\\} = \\{\\{w_1,..., w_n\\}, \\{w_2,..., w_{1+n}\\}, ..., \\{w_{k-n+1}, ..., w_k\\}\\}$$
 
    Thus, the probability of any subset of T, denoted as $s_{m+1}$, is given by:
 
    $$Pr(s_{m+1}|s_m) = \frac{Pr(s_m|s_{m+1}) \cdot Pr(s_{m+1})}{Pr(s_m)}$$
 
-4. The probability of finding the correct sequence of T for $\{s_1, s_2,...,s_{k-n+1}\}$ is:
+4. The probability of finding the correct sequence of T for $\\{s_1, s_2,...,s_{k-n+1}\\}$ is:
 
    $$Pr(s_1, s_2, ..., s_{k-n+1}) = Pr(s_1)Pr(s_2 | s_1)Pr(s_3 | s_2)...Pr(s_{k-n+1} | s_{k-n})$$
 
